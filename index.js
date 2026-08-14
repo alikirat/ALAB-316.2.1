@@ -16,7 +16,7 @@ function guessNumberGame() {
         }
 
         if (userInput === randomNumber) {
-            alert(`Congratulations!!! The number you guessed, ${userInput}, is the secret number. Seems like you're unbeatable... or maybe it's just luck.`);
+            alert(`Congratulations!!! The number you guessed, ${userInput}, is the secret number. Seems like you're unbeatable... or maybe it's just luck. Play Again!`);
             return; // End game since user won
         } else if (userInput > randomNumber) {
             alert(`Try again. The secret number is lower than ${userInput}.`);
@@ -29,3 +29,6 @@ function guessNumberGame() {
 
     alert(`😞 Game over. You gave it your best shot. The secret number was ${randomNumber}. Hey, there's always next time, right?`);
 }
+
+// Call the function to start the game
+guessNumberGame();
